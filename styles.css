@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('UTM.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.navbar {
+    width: 100%;
+    background-color: maroon;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: gold;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar a:hover {
+    background-color: darkred;
+    color: gold;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 70px; /* Adjusted for fixed navbar */
+}
+.overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+}
+.header {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: maroon;
+}
+footer {
+    background-color: maroon;
+    color: gold;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555555;
+}
+.link {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.link-staff {
+    background-color: maroon;
+}
+.link-staff:hover {
+    background-color: darkred;
+}
+.link-track {
+    background-color: gold;
+    color: black;
+}
+.link-track:hover {
+    background-color: goldenrod;
+}
+.features {
+    margin-top: 30px;
+    text-align: left;
+}
+.features h3 {
+    color: maroon;
+    margin-bottom: 10px;
+}
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+.features ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+.features ul li:before {
+    content: '✔';
+    color: gold;
+    position: absolute;
+    left: 0;
+}
+
+/* Login */
+label {
+    margin-bottom: 5px;
+    color: maroon;
+}
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: darkred;
+}
+
+
+/* Track Options Style*/
+.tracking-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.link-track {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.tracking-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tracking-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.link-text {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Staff */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form .checkbox-container input {
+    margin-right: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
